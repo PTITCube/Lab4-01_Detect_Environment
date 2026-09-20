@@ -19,7 +19,7 @@ void setup() {
     Serial.println("\n[EXAMPLE] Bắt đầu bài test Cảm biến Môi trường (BMP280)...");
     
     // Hàm init() sẽ tự động kết nối với BMP280, MPU6050 và QMC5883 qua I2C
-    mySensor.init();
+    mySensor.init(true, false, false);
 }
 
 void loop() {
